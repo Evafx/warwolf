@@ -1,5 +1,9 @@
 let board = document.querySelector("#seerpeople")
 let next = document.querySelector("#next")
+const wolfed = new Audio("Wolfed.mp3");
+const seerop = new Audio("seerop.mp3");
+seerop.play();
+
 localStorage.forsee = 0;
 for(let i = 0; i<localStorage.players; i++){
     let number = document.createElement("button")

@@ -1,4 +1,7 @@
 let result = document.querySelector("#result")
+const witched = new Audio("witched.mp3");
+witched.play();
+
 if(localStorage.killed == 0 && localStorage.witchkilled == 0){
     result.innerHTML = '今晚是平安夜！'
 }else{

@@ -2,6 +2,9 @@ let died = document.querySelector("#died");
 died.innerHTML = localStorage.getItem("killed")
 localStorage.witchkilled = 0;
 
+const witchop = new Audio("Witchop.mp3");
+witchop.play();
+
 let save = document.querySelector("#save");
 save.addEventListener("click",event=>{
     localStorage.killed = 0;

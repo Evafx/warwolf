@@ -1,4 +1,6 @@
 let board = document.querySelector("#wolf")
+const wolfop = new Audio('wolf.mp3');
+wolfop.play();
 for(let i = 0; i<localStorage.players; i++){
     let number = document.createElement("button")
     number.innerHTML = i+1;

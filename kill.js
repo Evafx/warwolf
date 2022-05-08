@@ -1,5 +1,7 @@
 let board = document.querySelector("#people")
 let next = document.querySelector("#next")
+const killmusic = new Audio('Kill.mp3');
+killmusic.play();
 localStorage.killed = 0;
 for(let i = 0; i<localStorage.players; i++){
     let number = document.createElement("button")
@@ -37,9 +39,9 @@ for(let i = 0; i<peoplelist.length; i++){
 }
 
 
-
+const wolfed = new Audio('Wolfed.mp3');
 // let next = document.querySelector("#next");
 next.addEventListener("click", event=>{
-
+    setTimeout('', 5000);
     location.href = "seer.html";
 })
